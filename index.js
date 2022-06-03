@@ -20,13 +20,12 @@ const dataBelanjaan = [
   },
 ];
 
-// boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = function(){
-let item =[];
+  let list =[];
   for(let counter = 0; counter < dataBelanjaan.length; counter++){
-    console.log(" - " + dataBelanjaan[counter].nama," x " + dataBelanjaan[counter].kuantitas);
+    list[counter]=(" - " + dataBelanjaan[counter].nama+"  x  " + dataBelanjaan[counter].kuantitas);
   }
-  return item;
+  return list;
 }
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
